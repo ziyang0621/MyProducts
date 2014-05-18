@@ -208,6 +208,13 @@
 }
 
 
+#pragma mark - UITextField Delegate Methods
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if (!textField.text.length) {
+        textField.text = @"0";
+    }
+}
+
 #pragma mark - UITableView Delegate Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -226,6 +233,7 @@
         if (i == indexPath.row) {
             cell.labelCity.text = cityKey;
             cell.textFieldAmount.text = [NSString stringWithFormat:@"%d", ((NSNumber*)[_productModel.stores objectForKey:cityKey]).intValue];
+            cell.textFieldAmount.delegate = self;
             break;
         }
         i++;
