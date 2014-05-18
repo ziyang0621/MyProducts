@@ -1,0 +1,27 @@
+PODS:
+  - JSONModel (0.13.0)
+  - MXLMediaView (1.1.0)
+  - SparkInspector (1.2.2)
+  - SVProgressHUD (1.0)
+  - TPKeyboardAvoiding (1.2.3)
+  - TSCurrencyTextField (0.1.0):
+    - TSCurrencyTextField/Core
+  - TSCurrencyTextField/Core (0.1.0)
+
+DEPENDENCIES:
+  - JSONModel
+  - MXLMediaView
+  - SparkInspector
+  - SVProgressHUD
+  - TPKeyboardAvoiding
+  - TSCurrencyTextField
+
+SPEC CHECKSUMS:
+  JSONModel: 1ce27c7d59de0ada0048e64f20006ce02e9ce73d
+  MXLMediaView: 06cce1d6e96ba271119b204e68e8bec6b8d06584
+  SparkInspector: 4bd040e553e958cabeb898301d2947f2be93144b
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
+  TPKeyboardAvoiding: 17995aaa6db26ac2a9fa8714a86509c5888f0392
+  TSCurrencyTextField: 470b38fed516031349fec831249b9125e2da2a5a
+
+COCOAPODS: 0.32.1
