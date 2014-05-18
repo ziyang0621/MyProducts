@@ -49,23 +49,29 @@
 
 - (void)viewDidAppear:(BOOL)animiated {
     [super viewDidAppear:animiated];
+    
+    //Adjust Stores Tableview and Scroll after View did appear
     _storesTableView.frame = CGRectMake(20.0f, CGRectGetMinY(_storesTableView.frame), 280.0f, CGRectGetHeight(_storesTableView.frame));
     _scrollView.contentSize = CGSizeMake(320.0f, CGRectGetMaxY(_storesTableView.frame) + 20.0f);
 }
 
-
+#pragma mark - Utilities Methods
 - (void)setUpView {
+    //Setup Product Name TextField
     _textFieldProductName.text = [_productModel.name copy];
-    
+
+    //Setup Product Description TextView
     [_textViewProductDescription.layer setBorderColor:[[[UIColor lightGrayColor] colorWithAlphaComponent:0.3] CGColor]];
     [_textViewProductDescription.layer setBorderWidth:1.0f];
     _textViewProductDescription.layer.cornerRadius = 5.0f;
     _textViewProductDescription.clipsToBounds = YES;
     _textViewProductDescription.text = [_productModel.descriptionText copy];
     
+    //Setup Product Price TextFields
     _textFieldProductRegPrice.text = _productModel.regPrice.stringValue;
     _textFieldProductSalesPrice.text = _productModel.salesPrice.stringValue;
     
+    //Setup Product Photo TextField
     _imageViewproductPhoto.image = _productModel.photo;
     _imageViewproductPhoto.layer.cornerRadius = CGRectGetHeight(_imageViewproductPhoto.frame) /2;
     _imageViewproductPhoto.layer.borderWidth = 1.0f;
@@ -75,11 +81,13 @@
     _imageViewproductPhoto.userInteractionEnabled = YES;
     [_imageViewproductPhoto addGestureRecognizer:imageViewTap];
     
+    //Setup Product Colors Label
     UILabel *labelColors = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, CGRectGetMaxY(_textFieldProductSalesPrice.frame) + 10.0f, 100.0f, 20.0f)];
     labelColors.text = @"Colors:";
     labelColors.font = [UIFont fontWithName:@"HelveticaNeue" size:17.0f];
     [_scrollView addSubview:labelColors];
     
+    //Setup Product Colors Views
     int i = 0;
     float minY = CGRectGetMinY(labelColors.frame);
     float maxY = CGRectGetMaxY(labelColors.frame);
@@ -99,11 +107,13 @@
         i ++;
     }
     
+    //Setup Product Stores Label
     UILabel *labelStores = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, maxY + 10.0f, 100.0f, 20.0f)];
     labelStores.text = @"Stores:";
     labelStores.font = [UIFont fontWithName:@"HelveticaNeue" size:17.0f];
     [_scrollView addSubview:labelStores];
     
+    //Setup Product Stores Table
     _storesTableView.frame = CGRectMake(20.0f, CGRectGetMaxY(labelStores.frame) + 10.0f, 280.0f, 44 * [[_productModel.stores allKeys] count]);
     _storesTableView.contentSize = CGSizeMake(320.0f, 44 * [[_productModel.stores allKeys] count]);
     _storesTableView.layer.borderColor = [[[UIColor lightGrayColor] colorWithAlphaComponent:0.3] CGColor];
@@ -111,6 +121,7 @@
     _storesTableView.layer.cornerRadius = 5.0f;
     _storesTableView.clipsToBounds = YES;
     
+    //Setup Product Update Button
     UIColor *buttonColor = [UIColor colorFromHexString:@"#FF5E3A"];
     _buttonUpdate.layer.cornerRadius = CGRectGetHeight(_buttonUpdate.frame) /2;
     _buttonUpdate.layer.borderWidth = 1.0f;
@@ -118,17 +129,19 @@
     [_buttonUpdate setTitleColor:buttonColor forState:UIControlStateNormal];
     [_buttonUpdate addTarget:self action:@selector(handleUpdateButtonTap) forControlEvents:UIControlEventTouchUpInside];
     
+    //Setup Product Delete Buton
     _buttonDelete.layer.cornerRadius = CGRectGetHeight(_buttonDelete.frame) /2;
     _buttonDelete.layer.borderWidth = 1.0f;
     _buttonDelete.layer.borderColor = buttonColor.CGColor;
     [_buttonDelete setTitleColor:buttonColor forState:UIControlStateNormal];
     [_buttonDelete addTarget:self action:@selector(handleDeleteButtonTap) forControlEvents:UIControlEventTouchUpInside];
 
-    
+    //Setup Scroll View
     UITapGestureRecognizer *scrollViewTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleScrollViewTap)];
     [_scrollView addGestureRecognizer:scrollViewTap];
 }
 
+#pragma mark - Gestures Handling Methods
 - (void)handleUpdateButtonTap {
     ProductModel *newModel = [[ProductModel alloc] init];
     newModel.uniqueId = [_productModel.uniqueId copy];
@@ -153,10 +166,14 @@
 }
 
 - (void)handleDeleteButtonTap {
-    [[ProductDatabase sharedDatabase] deleteProduct:_productModel];
-    [SVProgressHUD showSuccessWithStatus:@"Product Deleted"];
-    [self.delegate productChanged:self];
-    [self.navigationController popViewControllerAnimated:YES];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:@"Are you sure to delete this product?"
+                                  delegate:self
+                                  cancelButtonTitle:@"Cancel"
+                                  destructiveButtonTitle:@"Yes, Delete"
+                                  otherButtonTitles:nil];
+    
+    [actionSheet showInView:self.navigationController.view];
 }
 
 - (void)handleImageViewTap {
@@ -170,6 +187,16 @@
 
 - (void)handleScrollViewTap {
     [_scrollView endEditing: YES];
+}
+
+#pragma mark - UIActionSheet Delegate Methods
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Yes, Delete"]) {
+        [[ProductDatabase sharedDatabase] deleteProduct:_productModel];
+        [SVProgressHUD showSuccessWithStatus:@"Product Deleted"];
+        [self.delegate productChanged:self];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 
@@ -200,6 +227,7 @@
     return cell;
 }
 
+#pragma mark - MXLMediaView Delegate Methods
 -(void)mediaView:(MXLMediaView *)mediaView didReceiveLongPressGesture:(id)gesture {
     NSLog(@"MXLMediaViewDelgate: Long pressed received");
 }

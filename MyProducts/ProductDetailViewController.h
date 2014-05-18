@@ -14,7 +14,7 @@
 
 @protocol ProductDetailViewControllerDelegate;
 
-@interface ProductDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, MXLMediaViewDelegate>
+@interface ProductDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,UIActionSheetDelegate, MXLMediaViewDelegate>
 
 @property id<ProductDetailViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
