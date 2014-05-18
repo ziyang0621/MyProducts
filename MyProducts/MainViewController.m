@@ -38,6 +38,10 @@
     NSData *jsonData = [NSData dataWithContentsOfFile:filePath];
     _productJSONArray = [ProductModel arrayOfModelsFromData:jsonData error:nil];
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self setUpView];
 }
 
@@ -46,7 +50,6 @@
     _scrollView.contentSize = CGSizeMake(320.0f, 568.0f);
     _scrollView.frame = self.view.frame;
 }
-
 
 #pragma makr - Ultilities Methods
 - (void)setUpView {

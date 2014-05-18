@@ -43,6 +43,11 @@
     
     _productModel = [[ProductDatabase sharedDatabase] productDetail:_selectedUniqueId];
     
+  //  [self setUpView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self setUpView];
 }
 
@@ -51,7 +56,7 @@
     [super viewDidAppear:animiated];
     
     //Adjust Stores Tableview and Scroll after View did appear
-    _storesTableView.frame = CGRectMake(20.0f, CGRectGetMinY(_storesTableView.frame), 280.0f, CGRectGetHeight(_storesTableView.frame));
+//    _storesTableView.frame = CGRectMake(20.0f, CGRectGetMinY(_storesTableView.frame), 280.0f, CGRectGetHeight(_storesTableView.frame));
     _scrollView.contentSize = CGSizeMake(320.0f, CGRectGetMaxY(_storesTableView.frame) + 20.0f);
 }
 
@@ -114,8 +119,8 @@
     [_scrollView addSubview:labelStores];
     
     //Setup Product Stores Table
-    _storesTableView.frame = CGRectMake(20.0f, CGRectGetMaxY(labelStores.frame) + 10.0f, 280.0f, 44 * [[_productModel.stores allKeys] count]);
-    _storesTableView.contentSize = CGSizeMake(320.0f, 44 * [[_productModel.stores allKeys] count]);
+    _storesTableView.frame = CGRectMake(20.0f, CGRectGetMaxY(labelStores.frame) + 10.0f, 280.0f, 44.0f * [[_productModel.stores allKeys] count]);
+    _storesTableView.contentSize = CGSizeMake(320.0f, 44.0f * [[_productModel.stores allKeys] count]);
     _storesTableView.layer.borderColor = [[[UIColor lightGrayColor] colorWithAlphaComponent:0.3] CGColor];
     _storesTableView.layer.borderWidth = 1.0f;
     _storesTableView.layer.cornerRadius = 5.0f;
@@ -135,7 +140,12 @@
     _buttonDelete.layer.borderColor = buttonColor.CGColor;
     [_buttonDelete setTitleColor:buttonColor forState:UIControlStateNormal];
     [_buttonDelete addTarget:self action:@selector(handleDeleteButtonTap) forControlEvents:UIControlEventTouchUpInside];
-
+    
+    //Setup Divider Line
+    UIView *viewDivider = [[UIView alloc] initWithFrame:CGRectMake(0.0f, CGRectGetMinY(_buttonUpdate.frame) - 15.0f, 320.0f, 1.0f)];
+    viewDivider.backgroundColor = buttonColor;
+    [self.view addSubview:viewDivider];
+    
     //Setup Scroll View
     UITapGestureRecognizer *scrollViewTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleScrollViewTap)];
     [_scrollView addGestureRecognizer:scrollViewTap];

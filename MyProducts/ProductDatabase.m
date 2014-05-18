@@ -47,13 +47,6 @@
     return documentsPath;
 }
 
-//- (NSString *)generateUniqueId {
-//    CFUUIDRef uuidRef = CFUUIDCreate(NULL);
-//    CFStringRef uuidStringRef = CFUUIDCreateString(NULL, uuidRef);
-//    CFRelease(uuidRef);
-//    return (__bridge NSString *)uuidStringRef;
-//}
-
 
 #pragma mark - Database Methods
 - (NSArray *)productInfoArray {
@@ -95,10 +88,7 @@
             [retval addObject:model];
         }
         // Execute the statement.
-        if (sqlite3_step(statement) != SQLITE_DONE) {
-            NSLog(@"select error");
-        }
-        
+        sqlite3_step(statement);
         sqlite3_finalize(statement);
         sqlite3_close(_database);
     }
@@ -142,10 +132,7 @@
             model.stores = [NSKeyedUnarchiver unarchiveObjectWithData:storesData];
         }
         // Execute the statement.
-        if (sqlite3_step(statement) != SQLITE_DONE) {
-            NSLog(@"select single error");
-        }
-        
+        sqlite3_step(statement);
         sqlite3_finalize(statement);
         sqlite3_close(_database);
     }
@@ -183,10 +170,7 @@
     }
     
     // Execute the statement.
-    if (sqlite3_step(statement) != SQLITE_DONE) {
-        NSLog(@"insert error");
-    }
-    
+    sqlite3_step(statement);
     sqlite3_finalize(statement);
     sqlite3_close(_database);
 }
@@ -221,10 +205,7 @@
     }
     
     // Execute the statement.
-    if (sqlite3_step(statement) != SQLITE_DONE) {
-        NSLog(@"update error");
-    }
-    
+    sqlite3_step(statement);
     sqlite3_finalize(statement);
     sqlite3_close(_database);
 }
@@ -245,10 +226,7 @@
     }
     
     // Execute the statement.
-    if (sqlite3_step(statement) != SQLITE_DONE) {
-        NSLog(@"delete error");
-    }
-    
+    sqlite3_step(statement);
     sqlite3_finalize(statement);
     sqlite3_close(_database);
 }

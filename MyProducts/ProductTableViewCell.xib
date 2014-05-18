@@ -42,11 +42,19 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHm-4h-yLa">
+                        <rect key="frame" x="220" y="10" width="80" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="labelDescription" destination="GcV-at-Jll" id="deI-gD-ku5"/>
                 <outlet property="labelName" destination="BeN-SI-gGn" id="HIx-hr-s6w"/>
+                <outlet property="labelPercentOff" destination="CHm-4h-yLa" id="cuX-4g-vdh"/>
                 <outlet property="labelRegPrice" destination="8Dw-Aw-Smc" id="hDg-ZL-DB7"/>
                 <outlet property="labelSalesPrice" destination="H9Y-XT-rM2" id="KB4-wN-5kQ"/>
                 <outlet property="photo" destination="P9K-5n-HAm" id="IKh-9j-EPZ"/>

@@ -97,6 +97,17 @@
     cell.labelSalesPrice.text = [NSString stringWithFormat:@"Sales Price: %@", [_currencyformatter stringFromNumber:model.salesPrice]];
     cell.photo.image = model.photo;
     
+    if ([model.regPrice compare:model.salesPrice] == NSOrderedDescending) {
+        NSDecimalNumber *amountDiff = [model.regPrice decimalNumberBySubtracting:model.salesPrice];
+        NSDecimalNumber *percentOff = [[amountDiff decimalNumberByDividingBy:model.regPrice] decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"100.00"]];
+        if ([percentOff compare:[NSDecimalNumber decimalNumberWithString:@"1.00"]] == NSOrderedDescending) {
+            cell.labelPercentOff.text = [NSString stringWithFormat:@"%.f%% Off", percentOff.floatValue];
+        }
+    }
+    else {
+        cell.labelPercentOff.hidden = YES;
+    }
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }

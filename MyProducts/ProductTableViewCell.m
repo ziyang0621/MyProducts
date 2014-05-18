@@ -25,6 +25,9 @@
     _labelSalesPrice.textColor = [UIColor colorFromHexString:@"#FF5E3A"];
     _labelSalesPrice.shadowColor = [UIColor whiteColor];
     _labelSalesPrice.shadowOffset = CGSizeMake(0.4f, 0.4f);
+    
+    _labelPercentOff.backgroundColor = [UIColor colorFromHexString:@"#FF5E3A"];
+    _labelPercentOff.textColor = [UIColor whiteColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

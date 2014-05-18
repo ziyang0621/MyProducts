@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelDescription;
 @property (weak, nonatomic) IBOutlet UILabel *labelRegPrice;
 @property (weak, nonatomic) IBOutlet UILabel *labelSalesPrice;
+@property (weak, nonatomic) IBOutlet UILabel *labelPercentOff;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 @end
