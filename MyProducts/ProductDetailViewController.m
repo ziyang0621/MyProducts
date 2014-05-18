@@ -43,7 +43,6 @@
     
     _productModel = [[ProductDatabase sharedDatabase] productDetail:_selectedUniqueId];
     
-  //  [self setUpView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -55,8 +54,7 @@
 - (void)viewDidAppear:(BOOL)animiated {
     [super viewDidAppear:animiated];
     
-    //Adjust Stores Tableview and Scroll after View did appear
-//    _storesTableView.frame = CGRectMake(20.0f, CGRectGetMinY(_storesTableView.frame), 280.0f, CGRectGetHeight(_storesTableView.frame));
+    //Adjust Scroll View after View did appear
     _scrollView.contentSize = CGSizeMake(320.0f, CGRectGetMaxY(_storesTableView.frame) + 20.0f);
 }
 
