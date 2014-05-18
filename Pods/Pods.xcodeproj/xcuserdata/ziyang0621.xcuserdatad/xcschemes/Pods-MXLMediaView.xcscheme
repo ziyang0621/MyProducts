@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "368F7957633B439BB9352E50"
+               BlueprintIdentifier = "BCDEC8D87AE34E17874A89D1"
                BuildableName = "libPods-MXLMediaView.a"
                BlueprintName = "Pods-MXLMediaView"
                ReferencedContainer = "container:Pods.xcodeproj">

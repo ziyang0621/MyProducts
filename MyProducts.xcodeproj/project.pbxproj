@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852494C519295E6800BF2914 /* ProductDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 852494C419295E6800BF2914 /* ProductDatabaseTests.m */; };
+		852F1C31192952AF001BC06E /* ProductModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F1C30192952AF001BC06E /* ProductModelTests.m */; };
+		85A186141929667E00E724FB /* productTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 85A186131929667E00E724FB /* productTest.json */; };
+		85A186151929667E00E724FB /* productTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 85A186131929667E00E724FB /* productTest.json */; };
 		85BA5DB61927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BA5DB51927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.m */; };
 		85BA5DB81927EE550064AD02 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BA5DB71927EE550064AD02 /* Storyboard.storyboard */; };
 		85BA5DBB1927EEB70064AD02 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BA5DBA1927EEB70064AD02 /* MainViewController.m */; };
@@ -35,10 +39,10 @@
 		85DAF0DF1927295F0098122E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DAF0C41927295F0098122E /* Foundation.framework */; };
 		85DAF0E01927295F0098122E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DAF0C81927295F0098122E /* UIKit.framework */; };
 		85DAF0E81927295F0098122E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85DAF0E61927295F0098122E /* InfoPlist.strings */; };
-		85DAF0EA1927295F0098122E /* MyProductsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DAF0E91927295F0098122E /* MyProductsTests.m */; };
 		85DAF0F419272B720098122E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DAF0F319272B720098122E /* libsqlite3.0.dylib */; };
 		85DAF0F719272C6E0098122E /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DAF0F619272C6E0098122E /* ProductModel.m */; };
 		85DAF0FA19272D9D0098122E /* ProductDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DAF0F919272D9D0098122E /* ProductDatabase.m */; };
+		A430041EDEDB463EBB4AFFCF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B82F941CBDD44DF3A0D32193 /* libPods.a */; };
 		C6972F69460F40CEB471FEF9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B82F941CBDD44DF3A0D32193 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852494C419295E6800BF2914 /* ProductDatabaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDatabaseTests.m; sourceTree = "<group>"; };
+		852F1C30192952AF001BC06E /* ProductModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModelTests.m; sourceTree = "<group>"; };
+		85A186131929667E00E724FB /* productTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = productTest.json; sourceTree = "<group>"; };
 		85BA5DB41927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+NSDecimalNumber.h"; sourceTree = "<group>"; };
 		85BA5DB51927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+NSDecimalNumber.m"; sourceTree = "<group>"; };
 		85BA5DB71927EE550064AD02 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -95,7 +102,6 @@
 		85DAF0DD1927295F0098122E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		85DAF0E51927295F0098122E /* MyProductsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyProductsTests-Info.plist"; sourceTree = "<group>"; };
 		85DAF0E71927295F0098122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		85DAF0E91927295F0098122E /* MyProductsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProductsTests.m; sourceTree = "<group>"; };
 		85DAF0F319272B720098122E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		85DAF0F519272C6E0098122E /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
 		85DAF0F619272C6E0098122E /* ProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 				85DAF0DE1927295F0098122E /* XCTest.framework in Frameworks */,
 				85DAF0E01927295F0098122E /* UIKit.framework in Frameworks */,
 				85DAF0DF1927295F0098122E /* Foundation.framework in Frameworks */,
+				A430041EDEDB463EBB4AFFCF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +235,8 @@
 		85DAF0E31927295F0098122E /* MyProductsTests */ = {
 			isa = PBXGroup;
 			children = (
-				85DAF0E91927295F0098122E /* MyProductsTests.m */,
+				852F1C30192952AF001BC06E /* ProductModelTests.m */,
+				852494C419295E6800BF2914 /* ProductDatabaseTests.m */,
 				85DAF0E41927295F0098122E /* Supporting Files */,
 			);
 			path = MyProductsTests;
@@ -237,6 +245,7 @@
 		85DAF0E41927295F0098122E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				85A186131929667E00E724FB /* productTest.json */,
 				85DAF0E51927295F0098122E /* MyProductsTests-Info.plist */,
 				85DAF0E61927295F0098122E /* InfoPlist.strings */,
 			);
@@ -269,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85DAF0F01927295F0098122E /* Build configuration list for PBXNativeTarget "MyProductsTests" */;
 			buildPhases = (
+				9417400182064391B51DF8DD /* Check Pods Manifest.lock */,
 				85DAF0D81927295F0098122E /* Sources */,
 				85DAF0D91927295F0098122E /* Frameworks */,
 				85DAF0DA1927295F0098122E /* Resources */,
+				76F18DE9D00040DC9D4B251D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85DAF0CF1927295F0098122E /* InfoPlist.strings in Resources */,
+				85A186141929667E00E724FB /* productTest.json in Resources */,
 				85DAF0D71927295F0098122E /* Images.xcassets in Resources */,
 				85D3FC841927CE9000F4AC76 /* product.sqlite in Resources */,
 				85BA5DD91928320D0064AD02 /* ProductDetailViewController.xib in Resources */,
@@ -337,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85DAF0E81927295F0098122E /* InfoPlist.strings in Resources */,
+				85A186151929667E00E724FB /* productTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +369,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76F18DE9D00040DC9D4B251D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9417400182064391B51DF8DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DB7B365FDA2C4722A577B543 /* Check Pods Manifest.lock */ = {
@@ -401,7 +444,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DAF0EA1927295F0098122E /* MyProductsTests.m in Sources */,
+				852494C519295E6800BF2914 /* ProductDatabaseTests.m in Sources */,
+				852F1C31192952AF001BC06E /* ProductModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +579,7 @@
 		};
 		85DAF0F11927295F0098122E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867B18AE1A6B4891886FE54C /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyProducts.app/MyProducts";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -557,6 +602,7 @@
 		};
 		85DAF0F21927295F0098122E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867B18AE1A6B4891886FE54C /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyProducts.app/MyProducts";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F09F875B6FA04B7097315CC1"
+               BlueprintIdentifier = "FADCCED5CA1347CAA69F597B"
                BuildableName = "libPods-TSCurrencyTextField.a"
                BlueprintName = "Pods-TSCurrencyTextField"
                ReferencedContainer = "container:Pods.xcodeproj">

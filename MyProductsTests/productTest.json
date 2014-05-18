@@ -1,0 +1,54 @@
+[
+  {
+      "uniqueId": 1,
+      "name": "shirt",
+      "description":"a demo shirt",
+      "regPrice": 50.09,
+      "salesPrice": 35.99,
+      "photo": "shirt.png",
+      "colors": [
+                 "#4A4A4A",
+                 "#1D77EF",
+                 "#FFDB4C",
+                 "#52EDC7",
+                 "#DBDDDE"
+                 ],
+      "stores": {
+                "SF": 10,
+                "LA": 2,
+                "NY": 5
+      }
+  },
+  {
+      "uniqueId": 2,
+      "name": "shoe",
+      "description":"a demo shoe",
+      "regPrice": 45.01,
+      "salesPrice": 40.99,
+      "photo": "shoe.png",
+      "colors": [
+                 "#FF3B30",
+                 "#1D77EF"
+                 ],
+      "stores": {
+                "SF": 10,
+                "NY": 5
+      }
+  },
+  {
+      "uniqueId": 3,
+      "name": "glasses",
+      "description":"a demo glasses",
+      "regPrice": 20.05,
+      "salesPrice": 10.99,
+      "photo": "glasses.png",
+      "colors": [
+                 "#4A4A4A",
+                 "#1D77EF"
+                 ],
+      "stores": {
+                "SF": 10,
+                "LA": 2
+      }
+  },
+]
