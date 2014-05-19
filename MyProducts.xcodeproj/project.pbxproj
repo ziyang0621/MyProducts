@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		852494C519295E6800BF2914 /* ProductDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 852494C419295E6800BF2914 /* ProductDatabaseTests.m */; };
 		852F1C31192952AF001BC06E /* ProductModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F1C30192952AF001BC06E /* ProductModelTests.m */; };
+		8534959119297E3F00966FDA /* ProductDetailViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8534959019297E3F00966FDA /* ProductDetailViewControllerTests.m */; };
 		85A186141929667E00E724FB /* productTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 85A186131929667E00E724FB /* productTest.json */; };
 		85A186151929667E00E724FB /* productTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 85A186131929667E00E724FB /* productTest.json */; };
+		85A186171929771E00E724FB /* ProductListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A186161929771E00E724FB /* ProductListViewControllerTests.m */; };
 		85BA5DB61927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BA5DB51927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.m */; };
 		85BA5DB81927EE550064AD02 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BA5DB71927EE550064AD02 /* Storyboard.storyboard */; };
 		85BA5DBB1927EEB70064AD02 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BA5DBA1927EEB70064AD02 /* MainViewController.m */; };
@@ -42,6 +44,7 @@
 		85DAF0F419272B720098122E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DAF0F319272B720098122E /* libsqlite3.0.dylib */; };
 		85DAF0F719272C6E0098122E /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DAF0F619272C6E0098122E /* ProductModel.m */; };
 		85DAF0FA19272D9D0098122E /* ProductDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DAF0F919272D9D0098122E /* ProductDatabase.m */; };
+		85EAF5DD19298565004091CF /* MainViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EAF5DC19298565004091CF /* MainViewControllerTests.m */; };
 		A430041EDEDB463EBB4AFFCF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B82F941CBDD44DF3A0D32193 /* libPods.a */; };
 		C6972F69460F40CEB471FEF9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B82F941CBDD44DF3A0D32193 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -59,7 +62,9 @@
 /* Begin PBXFileReference section */
 		852494C419295E6800BF2914 /* ProductDatabaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDatabaseTests.m; sourceTree = "<group>"; };
 		852F1C30192952AF001BC06E /* ProductModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModelTests.m; sourceTree = "<group>"; };
+		8534959019297E3F00966FDA /* ProductDetailViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewControllerTests.m; sourceTree = "<group>"; };
 		85A186131929667E00E724FB /* productTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = productTest.json; sourceTree = "<group>"; };
+		85A186161929771E00E724FB /* ProductListViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewControllerTests.m; sourceTree = "<group>"; };
 		85BA5DB41927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+NSDecimalNumber.h"; sourceTree = "<group>"; };
 		85BA5DB51927DDE70064AD02 /* JSONValueTransformer+NSDecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+NSDecimalNumber.m"; sourceTree = "<group>"; };
 		85BA5DB71927EE550064AD02 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 		85DAF0F619272C6E0098122E /* ProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
 		85DAF0F819272D9D0098122E /* ProductDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDatabase.h; sourceTree = "<group>"; };
 		85DAF0F919272D9D0098122E /* ProductDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDatabase.m; sourceTree = "<group>"; };
+		85EAF5DC19298565004091CF /* MainViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerTests.m; sourceTree = "<group>"; };
 		867B18AE1A6B4891886FE54C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B82F941CBDD44DF3A0D32193 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -237,6 +243,9 @@
 			children = (
 				852F1C30192952AF001BC06E /* ProductModelTests.m */,
 				852494C419295E6800BF2914 /* ProductDatabaseTests.m */,
+				85EAF5DC19298565004091CF /* MainViewControllerTests.m */,
+				85A186161929771E00E724FB /* ProductListViewControllerTests.m */,
+				8534959019297E3F00966FDA /* ProductDetailViewControllerTests.m */,
 				85DAF0E41927295F0098122E /* Supporting Files */,
 			);
 			path = MyProductsTests;
@@ -445,7 +454,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				852494C519295E6800BF2914 /* ProductDatabaseTests.m in Sources */,
+				85EAF5DD19298565004091CF /* MainViewControllerTests.m in Sources */,
 				852F1C31192952AF001BC06E /* ProductModelTests.m in Sources */,
+				85A186171929771E00E724FB /* ProductListViewControllerTests.m in Sources */,
+				8534959119297E3F00966FDA /* ProductDetailViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

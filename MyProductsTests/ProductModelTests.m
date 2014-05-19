@@ -25,7 +25,7 @@
     [super tearDown];
 }
 
-#pragma mark - Unit Test Methods
+#pragma mark - Unit Test Tests
 - (void)testProductModelCount {
     NSString * filePath =[[NSBundle mainBundle] pathForResource:@"productTest" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:filePath];

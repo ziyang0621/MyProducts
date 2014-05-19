@@ -71,8 +71,8 @@
     _textViewProductDescription.text = [_productModel.descriptionText copy];
     
     //Setup Product Price TextFields
-    _textFieldProductRegPrice.text = _productModel.regPrice.stringValue;
-    _textFieldProductSalesPrice.text = _productModel.salesPrice.stringValue;
+    _textFieldProductRegPrice.amount = _productModel.regPrice;
+    _textFieldProductSalesPrice.amount = _productModel.salesPrice;
     
     //Setup Product Photo TextField
     _imageViewproductPhoto.image = _productModel.photo;
@@ -92,8 +92,8 @@
     
     //Setup Product Colors Views
     int i = 0;
-    float minY = CGRectGetMinY(labelColors.frame);
-    float maxY = CGRectGetMaxY(labelColors.frame);
+    CGFloat minY = CGRectGetMinY(labelColors.frame);
+    CGFloat maxY = CGRectGetMaxY(labelColors.frame);
     for (NSString *hexString in _productModel.colors) {
         UIView *viewColor;
         int modVal = i % 4;
