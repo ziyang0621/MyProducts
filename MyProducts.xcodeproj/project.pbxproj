@@ -45,6 +45,7 @@
 		85DAF0F719272C6E0098122E /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DAF0F619272C6E0098122E /* ProductModel.m */; };
 		85DAF0FA19272D9D0098122E /* ProductDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DAF0F919272D9D0098122E /* ProductDatabase.m */; };
 		85EAF5DD19298565004091CF /* MainViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EAF5DC19298565004091CF /* MainViewControllerTests.m */; };
+		85EAF5E119298F0E004091CF /* DesignSummary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85EAF5E019298F0E004091CF /* DesignSummary.txt */; };
 		A430041EDEDB463EBB4AFFCF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B82F941CBDD44DF3A0D32193 /* libPods.a */; };
 		C6972F69460F40CEB471FEF9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B82F941CBDD44DF3A0D32193 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,7 @@
 		85DAF0F819272D9D0098122E /* ProductDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDatabase.h; sourceTree = "<group>"; };
 		85DAF0F919272D9D0098122E /* ProductDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDatabase.m; sourceTree = "<group>"; };
 		85EAF5DC19298565004091CF /* MainViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerTests.m; sourceTree = "<group>"; };
+		85EAF5E019298F0E004091CF /* DesignSummary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DesignSummary.txt; sourceTree = "<group>"; };
 		867B18AE1A6B4891886FE54C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B82F941CBDD44DF3A0D32193 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -164,6 +166,7 @@
 		85DAF0B81927295F0098122E = {
 			isa = PBXGroup;
 			children = (
+				85EAF5E019298F0E004091CF /* DesignSummary.txt */,
 				85DAF0CA1927295F0098122E /* MyProducts */,
 				85DAF0E31927295F0098122E /* MyProductsTests */,
 				85DAF0C31927295F0098122E /* Frameworks */,
@@ -342,6 +345,7 @@
 			files = (
 				85DAF0CF1927295F0098122E /* InfoPlist.strings in Resources */,
 				85A186141929667E00E724FB /* productTest.json in Resources */,
+				85EAF5E119298F0E004091CF /* DesignSummary.txt in Resources */,
 				85DAF0D71927295F0098122E /* Images.xcassets in Resources */,
 				85D3FC841927CE9000F4AC76 /* product.sqlite in Resources */,
 				85BA5DD91928320D0064AD02 /* ProductDetailViewController.xib in Resources */,

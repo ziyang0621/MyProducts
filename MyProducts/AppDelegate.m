@@ -14,26 +14,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    NSString * filePath =[[NSBundle mainBundle] pathForResource:@"product" ofType:@"json"];
-//    NSData *jsonData = [NSData dataWithContentsOfFile:filePath];
-//    NSArray *productJsonArray = [ProductModel arrayOfModelsFromData:jsonData error:nil];
-//    for (ProductModel *product in productJsonArray) {
-//        [[ProductDatabase sharedDatabase] insertProduct:product];
-//    }
-//    
-//    NSArray *productArray = [ProductDatabase sharedDatabase].productInfoArray;
-//     for (ProductModel *info in productArray) {
-//        NSLog(@"%@", info);
-//     }
-//    
-//    ((ProductModel*)[productJsonArray objectAtIndex:0]).descriptionText = @"test";
-//    [[ProductDatabase sharedDatabase] updateProduct:[productJsonArray objectAtIndex:0]];
-//    
-//    productArray = [ProductDatabase sharedDatabase].productInfoArray;
-//    for (ProductModel *info in productArray) {
-//        NSLog(@"after update\n\n%@", info);
-//    }
-    
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue-Light" size:20.0f]}];
     [[UINavigationBar appearance] setTintColor:[UIColor colorFromHexString: @"#FF5E3A"]];
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];

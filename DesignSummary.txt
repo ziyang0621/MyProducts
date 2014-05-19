@@ -1,0 +1,41 @@
+Design Summary:
+
+Model:
+ProductModel - is a JSONModel object, which contains all required fields.
+1. The unique ID is a NSString, not limit to just intergers.
+2. The regular and sales prices are NSDecimalNumber properties, which allows for precised arithmetic calculations.
+3. The product photo is UIImage property, which allows for easy translation to UIImageView
+4. The stores is a NSMutableDictionary, which contains cities as keys, stock amounts as values.
+
+SQLite Database:
+ProductDatabase
+1. implements SQLite's SELECT, INSERT, UPDATE and DELETE statements
+
+View Controllers:
+MainViewController
+1. Creates "Create Product" buttons dynamically based on how many models from the input JSON file.
+
+ProductListViewController
+1. Displays important information for users, product name, description, prices, and percent off (If sales price is lower then regular prices).
+
+ProductDetailViewContrller
+1. The product details are displayed in text fields and text view, which allow users to update the products.
+2. The product stores are display in a table view, users can scroll the table view, if there are too many stores.
+
+
+
+Third Party libraries used - uses cocoapods as the dependency manager
+JSONModel - it provides automatic name based mapping, custom key mapping and custom data transforms(eg. float -> NSDecimalNumber, NSString -> UIImage)
+SVProgressHUD - it can display toasts to notify users.
+TSCurrencyTextField - It is a UITextField subclass that behaves like an ATM currency-amount entry field. It can also translate UITextField text to NSNumber/NSDecimalNumber, or NSNumber to UITextFeild text.
+MXLMediaView - It can show UIImage and blur and shrink the background.
+TPKeyboardAvoiding - It is a universal solution for moving text fields out of the way of the keyboard in iOS.
+
+
+
+Unit Tests Included:
+- ProductModelTests
+- ProductDatabaseTests
+- MainViewControllerTests
+- ProductListViewControllerTests
+- ProductDetailViewControllerTests
